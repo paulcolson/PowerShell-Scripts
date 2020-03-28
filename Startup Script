@@ -1,0 +1,3 @@
+This script shows a machine's last bootup time.
+
+Get-WmiObject -Class Win32_OperatingSystem –ComputerName localhost | Select-Object -Property CSName,LastBootUpTime
